@@ -10,7 +10,7 @@ import java.io.PrintWriter;
  *
  * @author Dan
  */
-public class MessageFileWriter implements Writer {
+public class MessageFileWriter implements MessageWriter {
     
     public void writeln(String line) {
 		boolean append = false;

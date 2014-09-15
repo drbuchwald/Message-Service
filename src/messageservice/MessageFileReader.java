@@ -11,7 +11,7 @@ import java.io.IOException;
  * Used to validate that there is text in the file, if not throw an exception or
  * return null.
  */
-public class MessageFileReader implements Reader {
+public class MessageFileReader implements MessageReader {
     private boolean lineReadFlag = false;
     
     

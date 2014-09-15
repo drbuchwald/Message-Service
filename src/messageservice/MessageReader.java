@@ -5,6 +5,6 @@ package messageservice;
  *
  * @author Dan
  */
-public interface Reader {
+public interface MessageReader {
     public abstract String readln();
 }

@@ -6,13 +6,13 @@ package messageservice;
  * @author Dan
  */
 public class MessageCopier {
-    private Reader reader;
-	private Writer writer;
+    private MessageReader reader;
+	private MessageWriter writer;
         private String line;
 	
 	
 	
-    public MessageCopier( Reader reader, Writer writer) {
+    public MessageCopier( MessageReader reader, MessageWriter writer) {
         this.reader = reader;
         this.writer = writer;
     }
@@ -31,19 +31,19 @@ public class MessageCopier {
             writer.writeln(line);
         }
         
-public Reader getReader() {
+public MessageReader getReader() {
         return reader;
     }
 
-    public void setReader(Reader reader) {
+    public void setReader(MessageReader reader) {
         this.reader = reader;
     }
 
-    public Writer getWriter() {
+    public MessageWriter getWriter() {
         return writer;
     }
 
-    public void setWriter(Writer writer) {
+    public void setWriter(MessageWriter writer) {
         this.writer = writer;
     }
   }

@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author Dan
  */
-public class KeyboardMessageReader implements Reader{
+public class KeyboardMessageReader implements MessageReader{
     
     
    

@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  *
  * @author Dan
  */
-public class GuiMessageOutput implements Writer {
+public class GuiMessageOutput implements MessageWriter {
 	
 	
         
