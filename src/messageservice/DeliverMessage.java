@@ -9,13 +9,9 @@ package messageservice;
  *
  * @author Dan
  */
-public class MessageService {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public class DeliverMessage {
+    public void writeln( String line ) {
+            System.out.println("New Message:");
+            System.out.println( line );
+	}
 }
