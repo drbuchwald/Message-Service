@@ -9,12 +9,12 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-		Reader freader = new FileReader();
-		Writer fwriter = new FileWriter();
+		Reader freader = new MessageFileReader();
+		Writer fwriter = new MessageFileWriter();
                                 
-                Reader reader = new KeyboardInput();
-                Writer writer = new GuiOutput();
-                Copier copier = new Copier( reader, writer );
+                Reader reader = new KeyboardMessageReader();
+                Writer writer = new GuiMessageOutput();
+                MessageCopier copier = new MessageCopier( reader, writer );
                 //Copier copier = new Copier( freader, fwriter );
                 copier.copy();
 		
@@ -22,7 +22,7 @@ public class Driver {
                 copier.setWriter(fwriter);
                 copier.writeLine();
                 
-                Writer cwriter = new ConsoleWriter();
+                Writer cwriter = new ConsoleMessageWriter();
                 //copier.setReader(freader);
                 copier.setWriter(cwriter);
                 copier.writeLine();

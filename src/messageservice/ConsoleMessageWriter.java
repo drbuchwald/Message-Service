@@ -9,7 +9,7 @@ package messageservice;
  *
  * @author Dan
  */
-public class ConsoleWriter implements Writer{
+public class ConsoleMessageWriter implements Writer{
    
     
     public void writeln( String line ) {

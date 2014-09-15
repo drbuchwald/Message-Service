@@ -5,14 +5,14 @@ package messageservice;
  *
  * @author Dan
  */
-public class Copier {
+public class MessageCopier {
     private Reader reader;
 	private Writer writer;
         private String line;
 	
 	
 	
-    public Copier( Reader reader, Writer writer) {
+    public MessageCopier( Reader reader, Writer writer) {
         this.reader = reader;
         this.writer = writer;
     }
