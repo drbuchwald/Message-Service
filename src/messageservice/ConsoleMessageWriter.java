@@ -9,11 +9,10 @@ package messageservice;
  *
  * @author Dan
  */
-public class ConsoleMessageWriter implements MessageWriter{
-   
-    
-    public void writeln( String line ) {
-            System.out.println("New Message:");
-            System.out.println( line );
-	}
+public class ConsoleMessageWriter implements MessageWriter {
+
+    public void writeln(String line) {
+        System.out.println("New Message:");
+        System.out.println(line);
+    }
 }
