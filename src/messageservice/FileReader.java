@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package messageservice;
 
 import java.io.BufferedReader;
@@ -11,7 +7,9 @@ import java.io.IOException;
 
 /**
  *
- * @author Dan
+ * @author Dan referenced from Jim Lombardo.
+ * Used to validate that there is text in the file, if not throw an exception or
+ * return null.
  */
 public class FileReader implements Reader {
     private boolean lineReadFlag = false;
