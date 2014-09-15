@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @author Dan
  */
 public class FileWriter implements Writer {
-    @Override
+    
     public void writeln(String line) {
 		boolean append = false;
 		File data = new File(File.separatorChar + "Temp" + 

@@ -14,7 +14,7 @@ public class Driver {
                                 
                 Reader reader = new KeyboardInput();
                 Writer writer = new GuiOutput();
-                Copier copier = new Copier( freader, fwriter );
+                Copier copier = new Copier( reader, writer );
                 //Copier copier = new Copier( freader, fwriter );
                 copier.copy();
 		
@@ -26,7 +26,7 @@ public class Driver {
                 //copier.setReader(freader);
                 copier.setWriter(cwriter);
                 copier.writeLine();
-                
+//                
                 
 		// Send end of program message
 		System.out.println("copied successfull.");
